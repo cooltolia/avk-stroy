@@ -1,0 +1,9 @@
+- var links = [{url: "", text: "О нас"}, {url: "", text: "Услуги"}, {url: "", text: "Объекты"}, {url: "", text: "Лицензии"}, {url: "", text: "Контакты"}]
+
+mixin main-nav()
+    +b.NAV.main-nav
+        +e.UL.list
+            each link in links
+                +e.LI.item
+                    +e.A.link(href="#{link.url}") #{link.text}
+                

@@ -1,0 +1,9 @@
+mixin main-header()
+    +b.HEADER.main-header
+        +e.top-row
+            +e.A.logo&attributes(attributes)
+                img(src='images/logo.png' alt='АВТ-Строй')
+        +e.navigation
+            +e.inner-row
+                +main-nav
+                +e.tel <span>тел.:</span> +7812 975 85 52

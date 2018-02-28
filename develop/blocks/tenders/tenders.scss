@@ -1,0 +1,51 @@
+.tenders {
+    width: 100%;
+    padding-bottom: 260px;
+
+    font-family: $roboto;
+
+    background-image: url('../images/tenders_bg.png');
+    background-size: auto;
+    background-position: bottom center;
+}
+
+.tenders__row {
+    width: 100%;
+
+    background-color: #e8e8e8;
+}
+
+.tenders__row-inner {
+    width: 1040px;
+    padding: 25px 20px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.tenders__text {
+    margin: 0;
+    margin-right: 60px;
+    width: 660px;
+
+    color: $darktext;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.tenders__link {
+    color: $themecolor;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+    transition: color 300ms ease;
+
+    &:hover, 
+    &:active {
+        color: $darktext;
+    }
+}
