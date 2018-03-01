@@ -1,0 +1,9 @@
+- var links = [{url: "", text: "О нас"}, {url: "", text: "Услуги"}, {url: "", text: "Объекты"}, {url: "", text: "Лицензии"}, {url: "", text: "Контакты"}]
+
+mixin footer-nav()
+    +b.NAV.footer-nav
+        +e.UL.list
+            each link in links
+                +e.LI.item
+                    +e.A.link(href="#{link.url}") #{link.text}
+                

@@ -730,6 +730,56 @@ th {
     font-size: 15px;
     line-height: 1.4; } }
 
+.footer-nav {
+  width: auto; }
+
+.footer-nav__list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.footer-nav__item {
+  position: relative;
+  margin-right: 15px; }
+  .footer-nav__item:last-child {
+    margin-right: 0; }
+
+.footer-nav__link {
+  position: relative;
+  display: block;
+  padding: 5px;
+  text-decoration: underline;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: color 300ms ease;
+  -moz-transition: color 300ms ease;
+  transition: color 300ms ease;
+  cursor: pointer; }
+  .footer-nav__link--active {
+    color: #ff7200; }
+  .footer-nav__link:hover, .footer-nav__link:active, .footer-nav__link:focus {
+    color: #ff7200; }
+
 .inner {
   position: relative;
   width: 100%;
@@ -750,123 +800,69 @@ th {
 
 .main-footer {
   width: 100%;
-  padding: 40px 0 50px;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  min-width: 1040px;
+  padding: 50px 0 25px;
+  margin: 0 auto;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
   color: #ffffff;
-  background-color: #212121; }
+  background-color: #3d3d3d;
+  border-top: 3px solid #4a4a4a; }
 
 .main-footer__inner {
   display: block;
-  text-align: center; }
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 70px 25px;
+  border-bottom: 1px solid #fff; }
 
-.main-footer__tel {
-  display: inline-block;
-  padding: 12px 15px 11px;
-  margin-bottom: 35px;
-  color: #050505;
+.main-footer__nav {
+  width: 100%;
+  margin-bottom: 10px; }
+
+.main-footer__row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: end;
+     -moz-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.main-footer__block {
+  width: auto;
+  -webkit-box-flex: 0;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin-right: 150px; }
+  .main-footer__block:last-child {
+    margin-right: 0; }
+
+.main-footer__services {
+  list-style: none;
+  padding: 0; }
+
+.main-footer__service {
+  margin-bottom: 2px;
   font-size: 15px;
-  font-weight: 700;
-  text-align: center;
-  border-radius: 25px;
-  background-color: #f2f2f2;
-  -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  transition: all 300ms ease; }
-  .main-footer__tel:hover, .main-footer__tel:active, .main-footer__tel:focus {
-    text-decoration: none;
-    color: #050505;
-    background-color: #d9d9d9; }
-  .main-footer__tel:active {
-    background-color: #bfbfbf; }
-
-.main-footer__adress {
-  width: 220px;
-  margin: 0 auto 40px;
-  font-size: 12px;
   font-weight: 400;
-  line-height: 1.2; }
+  text-transform: uppercase; }
 
-.main-footer__logo {
-  width: 250px;
-  margin: 0 auto; }
-  .main-footer__logo img {
-    width: 180px;
-    height: 37px;
-    margin-bottom: 10px; }
-
-.main-footer__logo-text {
-  font-size: 12px;
+.main-footer__credits {
+  font-size: 15px;
   font-weight: 400;
-  text-align: center; }
-
-@media (min-width: 768px) {
-  .main-footer {
-    padding-right: 35px;
-    padding-bottom: 25px; }
-  .main-footer__inner {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-       -moz-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-       -moz-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .main-footer__tel {
-    -webkit-box-ordinal-group: 4;
-       -moz-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    padding: 12px 20px 11px;
-    font-size: 16px; }
-  .main-footer__adress {
-    -webkit-box-ordinal-group: 2;
-       -moz-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    width: 200px;
-    margin: 0;
-    font-size: 12px; }
-  .main-footer__logo {
-    width: 250px;
-    -webkit-box-ordinal-group: 3;
-       -moz-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    margin: 0; }
-    .main-footer__logo img {
-      width: 250px;
-      height: 58px;
-      margin-bottom: 20px; }
-  .main-footer__logo-text {
-    margin: 0;
-    font-size: 12px; } }
-
-@media (min-width: 1200px) {
-  .main-footer__inner {
-    max-width: 1550px; }
-  .main-footer__tel {
-    padding: 17px 20px 16px;
-    border-radius: 50px;
-    font-size: 20px; }
-  .main-footer__adress {
-    width: 260px;
-    margin: 0;
-    font-size: 15px; }
-  .main-footer__logo {
-    width: 280px;
-    margin: 0; }
-    .main-footer__logo img {
-      width: 234px;
-      height: 48px;
-      margin-bottom: 40px; }
-  .main-footer__logo-text {
-    margin: 0;
-    font-size: 15px; } }
+  text-transform: uppercase; }
 
 .main-header {
   width: 100%;
@@ -1115,6 +1111,7 @@ body.modal-open {
 
 .services {
   width: 100%;
+  min-width: 1040px;
   padding-top: 50px;
   padding-bottom: 25px;
   background-color: #fff;
@@ -1448,6 +1445,7 @@ body.modal-open {
 
 .tenders {
   width: 100%;
+  min-width: 1040px;
   padding-bottom: 260px;
   font-family: Roboto, Helvetica, Arial, sans-serif;
   background-image: url("../images/tenders_bg.png");

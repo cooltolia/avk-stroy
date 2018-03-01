@@ -1,0 +1,45 @@
+.footer-nav {
+    width: auto;
+}
+
+.footer-nav__list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-nav__item {
+    position: relative;
+    margin-right: 15px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.footer-nav__link {
+    position: relative;
+    display: block;
+    padding: 5px;
+    text-decoration: underline;
+    color: $ligthtext;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 300ms ease;
+    cursor: pointer;
+    
+    &--active {
+        color: $themecolor;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $themecolor;
+    }
+}

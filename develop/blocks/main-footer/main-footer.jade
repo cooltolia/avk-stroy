@@ -1,11 +1,18 @@
+-var services = [{text:'Электромонтажные работы', icon:'images/service1.jpg'}, {text:'строительно-монтажные работы', icon:'images/service2.jpg'}, {text:'Расчистка от дкр', icon:'images/service3.jpg'}, {text:'Благоустройство и дорожные работы', icon:'images/service4.jpg'}, {text:'Проектирование', icon:'images/service5.jpg'}, {text:'обследование зданий и сооружений', icon:'images/service6.jpg'}]
+
 mixin main-footer()
-  +b.FOOTER.main-footer
-    +inner
+    +b.FOOTER.main-footer
         +e.inner
-            +e.A.tel(href='tel:+74951500902')
-                | +7 (495) 150-09-02
-            +e.adress
-                | Наш адрес: г. Санкт-Петербург, <br>Загородный просп. 31, офис 302<br> Ежедневно с 8.00 до 22.00,<br>  Приём заявок круглосуточно<br> Без обеда и выходных
-            +e.logo
-                img(src="images/logo-white.svg", alt="Адвокаткин")
-                +e.logo-text Защита бизнеса РФ 2018 &copy; <br>&laquo;Адвокаткин&raquo; Все права защищены.
+            +e.nav
+                +footer-nav
+            +e.row
+                +e.block
+                    +e.UL.services
+                        each service in services
+                            +e.LI.service= service.text
+                +e.block
+                    +e.credits
+                        | 2018 © ООО “AВК СТРОЙ”<br>
+                        | ИНН: 7811523780, ОГРН: 1127847312163 193091,<br> 
+                        | город Санкт-петербург, Октябрьская набережная,<br> 
+                        | дом 6, литер В, помещение 11-Н
