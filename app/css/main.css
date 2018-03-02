@@ -620,6 +620,38 @@ th {
     padding: 20px 20px 18px;
     font-size: 20px; } }
 
+.electrical-works {
+  max-width: 1040px;
+  margin: 0 auto;
+  color: #5b5b5b;
+  font-family: Roboto, Helvetica, Arial, sans-serif; }
+
+.electrical-works__block {
+  margin-bottom: 40px; }
+
+.electrical-works__title {
+  width: 375px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 3px 15px;
+  background-color: #ff7200;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600; }
+  .electrical-works__title .counter {
+    margin-right: 15px; }
+
+.electrical-works__content {
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: 600; }
+
+.electrical-works__text {
+  margin: 0; }
+
+.electrical-works__list {
+  padding-left: 30px; }
+
 .experience {
   width: 100%;
   padding: 30px 0 0;
@@ -1109,6 +1141,21 @@ body.modal-open {
   .modal-submit {
     font-size: 20px; } }
 
+.service {
+  width: 100%;
+  min-width: 1040px;
+  padding: 50px 20px 150px; }
+
+.service__heading {
+  margin: 0;
+  margin-bottom: 55px;
+  color: #ff7200;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center; }
+
 .services {
   width: 100%;
   min-width: 1040px;
@@ -1166,15 +1213,28 @@ body.modal-open {
      -moz-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  border: 2px solid #8a8a8a; }
+  border: 2px solid #8a8a8a;
+  overflow: hidden; }
   .services__item:nth-child(3n) {
     margin-right: 0; }
+  .services__item:hover, .services__item:active, .services__item:focus {
+    text-decoration: none; }
+    .services__item:hover .services__image, .services__item:active .services__image, .services__item:focus .services__image {
+      -webkit-transform: scale(1.05);
+         -moz-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+              transform: scale(1.05); }
 
 .services__image {
   width: 100%;
   height: 177px;
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  -moz-transition: transform 300ms ease, -moz-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease, -moz-transform 300ms ease; }
 
 .services__text {
   padding: 5px 20px;

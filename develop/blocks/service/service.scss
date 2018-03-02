@@ -1,0 +1,17 @@
+.service {
+    width: 100%;
+    min-width: 1040px;
+    padding: 50px 20px 150px;
+}
+
+.service__heading {
+    margin: 0;
+    margin-bottom: 55px;
+
+    color: $themecolor;
+    font-family: $roboto;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}

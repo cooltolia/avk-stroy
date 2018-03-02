@@ -1,10 +1,10 @@
--var services = [{text:'Электромонтажные работы', icon:'images/service1.jpg'}, {text:'строительно-монтажные работы', icon:'images/service2.jpg'}, {text:'Расчистка от дкр', icon:'images/service3.jpg'}, {text:'Благоустройство и дорожные работы', icon:'images/service4.jpg'}, {text:'Проектирование', icon:'images/service5.jpg'}, {text:'обследование зданий и сооружений', icon:'images/service6.jpg'}]
+-var services = [{text:'Электромонтажные работы', icon:'images/service1.jpg', link: '/electrical-works.html'}, {text:'строительно-монтажные работы', icon:'images/service2.jpg', link: '#'}, {text:'Расчистка от дкр', icon:'images/service3.jpg'}, {text:'Благоустройство и дорожные работы', icon:'images/service4.jpg', link: '#'}, {text:'Проектирование', icon:'images/service5.jpg', link: '#'}, {text:'обследование зданий и сооружений', icon:'images/service6.jpg', link: '#'}]
 
 mixin services()
     +b.SECTION.services
         +e.inner
             +e.list
                 for service in services
-                    +e.item
-                        +e.image(style='background-image: url("#{service.icon}")')
+                    +e.A.item(href='#{service.link}')
+                        +e.image(style='background-image: url(#{service.icon})')
                         +e.text #{service.text}

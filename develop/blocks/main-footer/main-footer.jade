@@ -1,4 +1,4 @@
--var services = [{text:'Электромонтажные работы', icon:'images/service1.jpg'}, {text:'строительно-монтажные работы', icon:'images/service2.jpg'}, {text:'Расчистка от дкр', icon:'images/service3.jpg'}, {text:'Благоустройство и дорожные работы', icon:'images/service4.jpg'}, {text:'Проектирование', icon:'images/service5.jpg'}, {text:'обследование зданий и сооружений', icon:'images/service6.jpg'}]
+-var servicesf = [{text:'Электромонтажные работы', icon:'images/service1.jpg'}, {text:'строительно-монтажные работы', icon:'images/service2.jpg'}, {text:'Расчистка от дкр', icon:'images/service3.jpg'}, {text:'Благоустройство и дорожные работы', icon:'images/service4.jpg'}, {text:'Проектирование', icon:'images/service5.jpg'}, {text:'обследование зданий и сооружений', icon:'images/service6.jpg'}]
 
 mixin main-footer()
     +b.FOOTER.main-footer
@@ -8,7 +8,7 @@ mixin main-footer()
             +e.row
                 +e.block
                     +e.UL.services
-                        each service in services
+                        each service in servicesf
                             +e.LI.service= service.text
                 +e.block
                     +e.credits

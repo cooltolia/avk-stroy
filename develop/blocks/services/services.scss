@@ -38,8 +38,20 @@
 
     border: 2px solid #8a8a8a;
 
+    overflow: hidden;
+
     &:nth-child(3n) {
         margin-right: 0;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+
+        .services__image {
+            transform: scale(1.05);
+        }
     }
 }
 
@@ -49,6 +61,8 @@
 
     background-size: cover;
     background-position: center center;
+
+    transition: transform 300ms ease;
 }
 
 .services__text {
