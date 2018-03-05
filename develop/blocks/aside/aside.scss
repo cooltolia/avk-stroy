@@ -1,0 +1,46 @@
+.aside {
+    width: 240px;
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.aside__nav {
+    padding: 0;
+    list-style: none;
+}
+
+.aside__service {
+    margin-bottom: 15px;
+}
+
+.aside__link {
+    display: block;
+    padding: 5px;
+
+    color: $darktext;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: transparent;
+
+    transition: all 300ms ease;
+
+    &.active {
+        color: $ligthtext;
+        background-color: $themecolor;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+    }
+
+    &:not('active'):hover {
+        color: $themecolor;
+    }
+    
+}

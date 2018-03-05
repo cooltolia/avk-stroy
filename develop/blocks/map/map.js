@@ -1,4 +1,4 @@
-;(function(){
+/* ;(function(){
     var zoom = 17;
 
     if ( $(window).width() < 480 ) {
@@ -55,4 +55,4 @@
         });
 
     });
-})();
+})(); */

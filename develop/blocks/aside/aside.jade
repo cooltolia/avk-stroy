@@ -1,0 +1,11 @@
+-var servicesa = [{text:'Электромонтажные работы', icon:'images/service1.jpg'}, {text:'строительно-монтажные работы', icon:'images/service2.jpg', active: 'true'}, {text:'Расчистка от дкр', icon:'images/service3.jpg'}, {text:'Благоустройство и дорожные работы', icon:'images/service4.jpg'}, {text:'Проектирование', icon:'images/service5.jpg'}, {text:'обследование зданий и сооружений', icon:'images/service6.jpg'}]
+
+mixin aside()
+    +b.ASIDE.aside
+        +e.UL.nav
+            each service in servicesa
+                +e.LI.service
+                    if (service.active)
+                        +e.A.link(href='#' class='active')= service.text
+                    else
+                        +e.A.link(href='#')= service.text

@@ -1,0 +1,103 @@
+.objects-list {
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+.objects-list__item {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin-bottom: 75px;
+}
+
+.objects-list__image {
+    position: relative;
+    width: 230px;
+    flex: 0 0 auto;
+    height: auto;
+
+    background-size: cover;
+    background-position: center center;
+
+    border: 1px solid $themecolor;
+}
+
+.objects-list__more {
+    position: absolute;
+    padding: 5px 25px;
+    bottom: 5px;
+    right: 5px;
+
+    color: $ligthtext;
+    font-size: 97px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1;
+
+    background-color: rgba(#1c1c1c, 0.2);
+    border-radius: 50%;
+
+    transition: color 300ms ease;
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        color: $themecolor;
+    }
+}
+
+.objects-list__description {
+    flex: 1 1 auto;
+    width: 100%;
+    padding: 10px 30px 15px;
+    border: 1px solid #1c1c1c;
+    border-left-width: 0;
+
+    color: $darktext;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.objects-list__title {
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.objects-list__location {
+    margin-bottom: 22px;
+}
+
+.objects-list__done-title {
+    margin-bottom: 20px;
+}
+
+.fancybox-caption-wrap {
+    padding-top: 20px;
+
+    background: white;
+    color: $darktext;
+
+    font-family: $roboto;
+    font-size: 14px;
+    font-weight: 600;
+
+    .fancybox-caption {
+        color: $darktext;
+        text-transform: uppercase;
+    }
+
+    .caption-title {
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    span {
+        margin-right: 25px;
+    }
+}

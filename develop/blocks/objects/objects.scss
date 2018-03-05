@@ -1,0 +1,27 @@
+.objects {
+    width: 100%;
+    min-width: 1040px;
+    padding: 50px 20px 75px;
+
+    font-family: $roboto;
+}
+
+.objects__inner {
+    max-width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.objects__heading {
+    margin: 0;
+    margin-bottom: 55px;
+
+    color: $themecolor;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
