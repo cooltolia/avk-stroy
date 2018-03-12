@@ -1,0 +1,59 @@
+.licenses-content {
+    width: 1040px;
+    margin: 0 auto;
+    padding-top: 50px;
+
+    font-family: $roboto;
+}
+
+.licenses-content__heading {
+    margin: 0;
+    margin-bottom: 25px;
+
+    color: $themecolor;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.licenses-content__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.licenses-content__item {
+    width: 320px;
+    flex: 0 0 auto;
+    margin-bottom: 70px;
+}
+
+.licenses-content__link {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 450px;
+    margin-bottom: 20px;
+}
+
+.licenses-content__image {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.licenses-content__label {
+    padding: 10px 20px;
+
+    color: $ligthtext;
+    font-size: 18px;
+    font-weight: 400;
+
+    background-color: $themecolor;
+
+    span {
+        display: block;
+    }
+}

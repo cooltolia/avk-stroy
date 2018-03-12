@@ -371,6 +371,39 @@ td,
 th {
   padding: 0; }
 
+.accomplishment {
+  max-width: 1040px;
+  margin: 0 auto;
+  color: #5b5b5b;
+  font-family: Roboto, Helvetica, Arial, sans-serif; }
+
+.accomplishment__block {
+  margin-bottom: 40px; }
+
+.accomplishment__title {
+  width: 375px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 3px 15px;
+  background-color: #ff7200;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600; }
+  .accomplishment__title .counter {
+    margin-right: 15px; }
+
+.accomplishment__content {
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: 600; }
+
+.accomplishment__text {
+  margin: 0;
+  margin-bottom: 10px; }
+
+.accomplishment__list {
+  padding-left: 30px; }
+
 .advantages {
   width: 100%;
   font-family: "Open Sans", Helvetica, Arial, sans-serif; }
@@ -656,6 +689,129 @@ th {
   .aside__link:not('active'):hover {
     color: #ff7200; }
 
+.building {
+  max-width: 1040px;
+  margin: 0 auto;
+  color: #5b5b5b;
+  font-family: Roboto, Helvetica, Arial, sans-serif; }
+
+.building__block {
+  margin-bottom: 40px; }
+
+.building__title {
+  width: 375px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 3px 15px;
+  background-color: #ff7200;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600; }
+  .building__title .counter {
+    margin-right: 15px; }
+
+.building__content {
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: 600; }
+
+.building__text {
+  margin: 0;
+  margin-bottom: 10px; }
+
+.building__list {
+  padding-left: 30px; }
+
+.clearance {
+  max-width: 1040px;
+  margin: 0 auto;
+  color: #5b5b5b;
+  font-family: Roboto, Helvetica, Arial, sans-serif; }
+
+.clearance__block {
+  margin-bottom: 40px; }
+
+.clearance__title {
+  width: 375px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 3px 15px;
+  background-color: #ff7200;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600; }
+  .clearance__title .counter {
+    margin-right: 15px; }
+
+.clearance__content {
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: 600; }
+
+.clearance__text {
+  margin: 0;
+  margin-bottom: 10px; }
+
+.clearance__list {
+  padding-left: 30px; }
+
+.contacts-data {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  width: 600px;
+  margin: 0 auto;
+  color: #050505;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase; }
+
+.contacts-data__name {
+  margin-bottom: 10px; }
+
+.contacts-data__address {
+  margin-bottom: 10px; }
+
+.decoration {
+  width: 100%;
+  min-width: 1040px;
+  height: 440px;
+  background-image: url("../images/tenders_bg.png");
+  background-size: auto;
+  background-position: bottom center; }
+
+.drafting {
+  max-width: 1040px;
+  margin: 0 auto;
+  color: #5b5b5b;
+  font-family: Roboto, Helvetica, Arial, sans-serif; }
+
+.drafting__block {
+  margin-bottom: 40px; }
+
+.drafting__title {
+  width: 375px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 3px 15px;
+  background-color: #ff7200;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600; }
+  .drafting__title .counter {
+    margin-right: 15px; }
+
+.drafting__content {
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: 600; }
+
+.drafting__text {
+  margin: 0;
+  margin-bottom: 10px; }
+
+.drafting__list {
+  padding-left: 30px; }
+
 .electrical-works {
   max-width: 1040px;
   margin: 0 auto;
@@ -683,7 +839,8 @@ th {
   font-weight: 600; }
 
 .electrical-works__text {
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 10px; }
 
 .electrical-works__list {
   padding-left: 30px; }
@@ -865,6 +1022,100 @@ th {
   .inner {
     max-width: 1170px;
     padding: 0 20px; } }
+
+.inspection {
+  max-width: 1040px;
+  margin: 0 auto;
+  color: #5b5b5b;
+  font-family: Roboto, Helvetica, Arial, sans-serif; }
+
+.inspection__block {
+  margin-bottom: 40px; }
+
+.inspection__title {
+  width: 375px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 3px 15px;
+  background-color: #ff7200;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600; }
+  .inspection__title .counter {
+    margin-right: 15px; }
+
+.inspection__content {
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: 600; }
+
+.inspection__text {
+  margin: 0;
+  margin-bottom: 10px; }
+
+.inspection__list {
+  padding-left: 30px; }
+
+.licenses-content {
+  width: 1040px;
+  margin: 0 auto;
+  padding-top: 50px;
+  font-family: Roboto, Helvetica, Arial, sans-serif; }
+
+.licenses-content__heading {
+  margin: 0;
+  margin-bottom: 25px;
+  color: #ff7200;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase; }
+
+.licenses-content__list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.licenses-content__item {
+  width: 320px;
+  -webkit-box-flex: 0;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin-bottom: 70px; }
+
+.licenses-content__link {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 450px;
+  margin-bottom: 20px; }
+
+.licenses-content__image {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto; }
+
+.licenses-content__label {
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #ff7200; }
+  .licenses-content__label span {
+    display: block; }
 
 .main-footer {
   width: 100%;
@@ -1057,14 +1308,37 @@ th {
     text-decoration: none;
     color: #ff7200; }
 
-.map__inner {
-  height: 342px;
-  max-width: 1920px;
-  margin: 0 auto; }
+.map {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .map::before {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: 35px;
+    left: 0;
+    z-index: 1;
+    -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+    background-image: url("../images/map-bg.png");
+    background-size: 100%; }
+  .map::after {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 35px;
+    left: 0;
+    background-image: url("../images/map-bg.png");
+    background-size: 100%; }
 
-@media (min-width: 1200px) {
-  .map__inner {
-    height: 615px; } }
+.map__inner {
+  height: 900px;
+  max-width: 1920px;
+  min-width: 1040px;
+  margin: 0 auto; }
 
 .modal {
   width: 80%;
@@ -1726,6 +2000,67 @@ body.modal-open {
   transition: color 300ms ease; }
   .tenders__link:hover, .tenders__link:active {
     color: #050505; }
+
+.testimonials-content {
+  width: 1040px;
+  margin: 0 auto;
+  padding-top: 50px;
+  font-family: Roboto, Helvetica, Arial, sans-serif; }
+
+.testimonials-content__heading {
+  margin: 0;
+  margin-bottom: 25px;
+  color: #ff7200;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase; }
+
+.testimonials-content__list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.testimonials-content__item {
+  width: 320px;
+  -webkit-box-flex: 0;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin-bottom: 70px; }
+
+.testimonials-content__link {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 450px;
+  margin-bottom: 20px; }
+
+.testimonials-content__image {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto; }
+
+.testimonials-content__label {
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #ff7200; }
+  .testimonials-content__label span {
+    display: block; }
 
 .testimonials {
   width: 100%;

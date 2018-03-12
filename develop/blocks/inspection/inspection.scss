@@ -1,0 +1,44 @@
+.inspection {
+    max-width: 1040px;
+    margin: 0 auto;
+
+    color: #5b5b5b;
+    font-family: $roboto;
+}
+
+.inspection__block {
+    margin-bottom: 40px;
+}
+
+.inspection__title {
+    width: 375px;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 3px 15px;
+
+    background-color: $themecolor;
+
+    color: $ligthtext;
+    font-size: 18px;
+    font-weight: 600;
+
+    .counter {
+        margin-right: 15px;
+    }
+}
+
+.inspection__content {
+    padding-left: 15px;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.inspection__text {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.inspection__list {
+    padding-left: 30px;
+}

@@ -1,0 +1,19 @@
+.contacts-data {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    width: 600px;
+    margin: 0 auto;
+
+    color: $darktext;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.contacts-data__name {
+    margin-bottom: 10px;
+}
+
+.contacts-data__address {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,44 @@
+.accomplishment {
+    max-width: 1040px;
+    margin: 0 auto;
+
+    color: #5b5b5b;
+    font-family: $roboto;
+}
+
+.accomplishment__block {
+    margin-bottom: 40px;
+}
+
+.accomplishment__title {
+    width: 375px;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 3px 15px;
+
+    background-color: $themecolor;
+
+    color: $ligthtext;
+    font-size: 18px;
+    font-weight: 600;
+
+    .counter {
+        margin-right: 15px;
+    }
+}
+
+.accomplishment__content {
+    padding-left: 15px;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.accomplishment__text {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.accomplishment__list {
+    padding-left: 30px;
+}

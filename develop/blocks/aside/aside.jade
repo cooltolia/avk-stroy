@@ -1,4 +1,4 @@
--var servicesa = [{text:'Электромонтажные работы', icon:'images/service1.jpg'}, {text:'строительно-монтажные работы', icon:'images/service2.jpg', active: 'true'}, {text:'Расчистка от дкр', icon:'images/service3.jpg'}, {text:'Благоустройство и дорожные работы', icon:'images/service4.jpg'}, {text:'Проектирование', icon:'images/service5.jpg'}, {text:'обследование зданий и сооружений', icon:'images/service6.jpg'}]
+-var servicesa = [{text:'Электромонтажные работы', icon:'images/service1.jpg', link: '#electrical-works', active: 'true'}, {text:'строительно-монтажные работы', icon:'images/service2.jpg', link: '#building'}, {text:'Расчистка от дкр', icon:'images/service3.jpg', link: '#clearance'}, {text:'Благоустройство и дорожные работы', icon:'images/service4.jpg', link: '#accomplishment'}, {text:'Проектирование', icon:'images/service5.jpg', link: '#drafting'}, {text:'обследование зданий и сооружений', icon:'images/service6.jpg', link: '#inspection'}]
 
 mixin aside()
     +b.ASIDE.aside
@@ -6,6 +6,6 @@ mixin aside()
             each service in servicesa
                 +e.LI.service
                     if (service.active)
-                        +e.A.link(href='#' class='active')= service.text
+                        +e.A.link(href='#' data-href='#{service.link}' class='active')= service.text
                     else
-                        +e.A.link(href='#')= service.text
+                        +e.A.link(href='#' data-href='#{service.link}')= service.text

@@ -10,6 +10,8 @@ develop/js/main.js
 *.log
 *.pdf
 *.psd
+*.rar
+*.zip
 *.sublime*
 css/*.css
 node_modules/
