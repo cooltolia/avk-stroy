@@ -58,12 +58,12 @@
 
     color: $darktext;
     font-size: 16px;
-    line-height: 1;
+    line-height: 1.1;
     font-weight: 400;
-    text-transform: uppercase;
 
     .bold {
         font-weight: 600;
+        text-transform: uppercase;
     }
 }
 
@@ -71,6 +71,10 @@
     margin-bottom: 12px;
     font-size: 20px;
     font-weight: 700;
+}
+
+.objects-list__customer {
+    margin-bottom: 7px;
 }
 
 .objects-list__location {

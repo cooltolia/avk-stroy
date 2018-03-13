@@ -1538,16 +1538,19 @@ body.modal-open {
   border-left-width: 0;
   color: #050505;
   font-size: 16px;
-  line-height: 1;
-  font-weight: 400;
-  text-transform: uppercase; }
+  line-height: 1.1;
+  font-weight: 400; }
   .objects-list__description .bold {
-    font-weight: 600; }
+    font-weight: 600;
+    text-transform: uppercase; }
 
 .objects-list__title {
   margin-bottom: 12px;
   font-size: 20px;
   font-weight: 700; }
+
+.objects-list__customer {
+  margin-bottom: 7px; }
 
 .objects-list__location {
   margin-bottom: 22px; }
