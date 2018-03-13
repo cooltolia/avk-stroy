@@ -371,6 +371,25 @@ td,
 th {
   padding: 0; }
 
+.about-data {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  font-family: Roboto, Helvetica, Arial, sans-serif; }
+
+.about-data__heading {
+  margin-bottom: 60px;
+  color: #ff7200;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center; }
+
+.about-data__text {
+  margin-bottom: 25px;
+  color: #5b5b5b;
+  font-size: 18px; }
+
 .accomplishment {
   max-width: 1040px;
   margin: 0 auto;
@@ -1522,6 +1541,8 @@ body.modal-open {
   line-height: 1;
   font-weight: 400;
   text-transform: uppercase; }
+  .objects-list__description .bold {
+    font-weight: 600; }
 
 .objects-list__title {
   margin-bottom: 12px;
@@ -1534,20 +1555,24 @@ body.modal-open {
 .objects-list__done-title {
   margin-bottom: 20px; }
 
-.fancybox-caption-wrap {
+.objects-list__done-year {
+  font-weight: 600;
+  margin-top: 10px; }
+
+.objects-list .fancybox-caption-wrap {
   padding-top: 20px;
   background: white;
   color: #050505;
   font-family: Roboto, Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 600; }
-  .fancybox-caption-wrap .fancybox-caption {
+  .objects-list .fancybox-caption-wrap .fancybox-caption {
     color: #050505;
     text-transform: uppercase; }
-  .fancybox-caption-wrap .caption-title {
+  .objects-list .fancybox-caption-wrap .caption-title {
     margin-bottom: 10px;
     font-weight: 700; }
-  .fancybox-caption-wrap span {
+  .objects-list .fancybox-caption-wrap span {
     margin-right: 25px; }
 
 .objects {
@@ -1586,6 +1611,33 @@ body.modal-open {
   font-weight: 600;
   text-transform: uppercase;
   text-align: center; }
+
+.objects__link {
+  position: relative;
+  color: #ff7200;
+  font: inherit;
+  text-decoration: none;
+  -webkit-transition: color 300ms ease;
+  -moz-transition: color 300ms ease;
+  transition: color 300ms ease; }
+  .objects__link::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -3px;
+    background-color: #ff7200; }
+  .objects__link:hover, .objects__link:active, .objects__link:focus {
+    text-decoration: none;
+    color: #050505; }
+  .objects__link.active {
+    color: #050505; }
+    .objects__link.active::after {
+      height: 0; }
+    .objects__link.active:hover, .objects__link.active:active, .objects__link.active:focus {
+      text-decoration: none;
+      color: #050505; }
 
 .service {
   width: 100%;

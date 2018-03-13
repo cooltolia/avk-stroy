@@ -25,3 +25,46 @@
     text-transform: uppercase;
     text-align: center;
 }
+
+.objects__link {
+    position: relative;
+    color: $themecolor;
+    font: inherit;
+    text-decoration: none;
+
+    transition: color 300ms ease;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        left: 0;
+        bottom: -3px;
+
+        background-color: $themecolor;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        color: $darktext;
+    }
+
+    &.active {
+        color: $darktext;
+
+        &::after {
+            height: 0;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            text-decoration: none;
+            color: $darktext;
+        }
+
+    }
+}

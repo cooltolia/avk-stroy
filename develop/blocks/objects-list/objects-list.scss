@@ -61,6 +61,10 @@
     line-height: 1;
     font-weight: 400;
     text-transform: uppercase;
+
+    .bold {
+        font-weight: 600;
+    }
 }
 
 .objects-list__title {
@@ -77,27 +81,29 @@
     margin-bottom: 20px;
 }
 
-.fancybox-caption-wrap {
-    padding-top: 20px;
-
-    background: white;
-    color: $darktext;
-
-    font-family: $roboto;
-    font-size: 14px;
+.objects-list__done-year {
     font-weight: 600;
+    margin-top: 10px;
+}
 
-    .fancybox-caption {
+.objects-list {
+    .fancybox-caption-wrap {
+        padding-top: 20px;
+        background: white;
         color: $darktext;
-        text-transform: uppercase;
-    }
-
-    .caption-title {
-        margin-bottom: 10px;
-        font-weight: 700;
-    }
-
-    span {
-        margin-right: 25px;
+        font-family: $roboto;
+        font-size: 14px;
+        font-weight: 600;
+        .fancybox-caption {
+            color: $darktext;
+            text-transform: uppercase;
+        }
+        .caption-title {
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        span {
+            margin-right: 25px;
+        }
     }
 }

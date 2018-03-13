@@ -1,5 +1,8 @@
 mixin objects()
     +b.objects
-        +e.H2.heading Объекты \ выполненные работы
+        +e.H2.heading Объекты \ 
+            +e.link(href='#' data-href='finished') Завершенные 
+            span \ 
+            +e.link.active(href='#' data-href='active') В работе
         +e.inner
             block

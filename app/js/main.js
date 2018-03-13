@@ -126,6 +126,9 @@
     
 
     
+    
+
+    
     ;(function(){
 
         var zoom = 15;
@@ -204,13 +207,15 @@
 
         var $container = $('.objects-list'),
 
-            $link = $('.aside__link');
+            $link = $('.aside__link'),
+
+            $trigger = $('.objects__link'); // переключатель объектовы выполненных/в работе
 
             
 
     
 
-        $container.load("objects-ajax.html #electrical-works", function() {
+        $container.load("activeObjects-ajax.html #electrical-works", function() {
 
     
 
@@ -246,6 +251,78 @@
 
     
 
+        $trigger.on('click', function(e) {
+
+            e.preventDefault();
+
+    
+
+            var $this = $(this),
+
+                type = $this.attr('data-href');
+
+    
+
+            if ($this.hasClass('active')) {
+
+                console.log('Уже');
+
+                return;
+
+            };
+
+    
+
+            $trigger.removeClass('active');
+
+            $this.addClass('active');
+
+    
+
+            var $activeLink = $link.filter('.active'),
+
+                $anchor = $activeLink.attr('data-href');
+
+    
+
+            $container.load( type + "Objects-ajax.html " + $anchor, function () {
+
+    
+
+                $('.objects-list__more').click(function (e) {
+
+                    e.preventDefault();
+
+    
+
+                    var $this = $(this);
+
+    
+
+                    var images = $this.siblings('.all-images').children('.fancybox')
+
+    
+
+                    $.fancybox.open(images, {
+
+                        arrows: true,
+
+                        toolbar: false,
+
+                    })
+
+                    return false;
+
+    
+
+                });
+
+            });
+
+        });
+
+    
+
         $link.on('click', function(e) {
 
             e.preventDefault();
@@ -254,7 +331,11 @@
 
             var $this = $(this),
 
-                $anchor = $this.attr('data-href');
+                $anchor = $this.attr('data-href'),
+
+                $activeTrigger = $trigger.filter('.active'),
+
+                type = $activeTrigger.attr('data-href');
 
     
 
@@ -274,7 +355,7 @@
 
             
 
-            $container.load("objects-ajax.html " + $anchor, function() {
+            $container.load(type + "Objects-ajax.html " + $anchor, function() {
 
     
 

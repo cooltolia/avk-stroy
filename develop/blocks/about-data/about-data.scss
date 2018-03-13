@@ -1,0 +1,24 @@
+.about-data {
+    width: 1040px;
+    margin: 0 auto;
+    padding: 50px 20px;
+
+    font-family: $roboto
+}
+
+.about-data__heading {
+    margin-bottom: 60px;
+
+    color: $themecolor;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-data__text {
+    margin-bottom: 25px;
+
+    color: #5b5b5b;
+    font-size: 18px;
+}
