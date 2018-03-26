@@ -1,4 +1,4 @@
-.building {
+.service-page {
     max-width: 1040px;
     margin: 0 auto;
 
@@ -6,11 +6,11 @@
     font-family: $roboto;
 }
 
-.building__block {
+.service-page__block {
     margin-bottom: 40px;
 }
 
-.building__title {
+.service-page__title {
     width: 375px;
     margin: 0;
     margin-bottom: 20px;
@@ -27,18 +27,18 @@
     }
 }
 
-.building__content {
+.service-page__content {
     padding-left: 15px;
-
+    
     font-size: 18px;
     font-weight: 600;
 }
 
-.building__text {
+.service-page__text {
     margin: 0;
     margin-bottom: 10px;
 }
 
-.building__list {
+.service-page__list {
     padding-left: 30px;
 }
